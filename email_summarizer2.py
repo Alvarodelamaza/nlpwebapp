@@ -71,3 +71,7 @@ if st.button("Summarize"):
         st.write("Please enter some text to summarize.")
 
 st.caption("This NLP tool has been designed for education purposes for the Vrije Universiteit Amsterdam by Jakob Walter, Doruk Tarhan and Alvaro de la Maza . The  model uses spaCy : Honnibal, M., & Montani, I. (2017). spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing")
+
+if __name__ == "__main__":
+    port = os.environ.get("PORT", 8501)
+    app.run(host="0.0.0.0", port=port)
